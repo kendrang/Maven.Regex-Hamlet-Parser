@@ -15,6 +15,7 @@ public class HamletParserTest {
 
     @Test
     public void testChangeHamletToLeon() {
+        System.out.println(hamletParser.changeNames("Hamlet","Leon",hamletText));
     }
 
     @Test
