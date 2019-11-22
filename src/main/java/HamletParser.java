@@ -41,7 +41,7 @@ public class HamletParser {
 
     public String changeNames(String nameToReplace, String newName, String text) {
 
-        Pattern pattern = Pattern.compile(nameToReplace);
+        Pattern pattern = Pattern.compile("(?i:"+nameToReplace+")");
         Matcher matcher = pattern.matcher(text);
 
         text = matcher.replaceAll(newName);
